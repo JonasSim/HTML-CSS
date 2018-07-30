@@ -1,0 +1,291 @@
+
+body {
+    
+    min-height: 100%;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+#cover {
+    height: 700px;
+    position: relative;
+    top: -100px;
+    width: 100%;
+    background:url(images/banner.jpg) no-repeat, center bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.navigation {
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 10000;
+    box-shadow: 0 1px 5px #000000;
+}
+
+ul {
+    padding: 0 0 0 67px;
+}
+
+li { 
+    color: #14213D;
+    display: inline-block;
+    font-family: 'Abel', Arial, sans-serif;
+    font-weight: 300;
+    margin: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(212, 147, 81, 0.74);
+    opacity: 1;
+    padding: 5px;
+    transition:opacity 0.25s;
+}
+
+
+.navigation a,
+.navigation a:after,
+.navigation a:before{
+    transition: all .5s;
+}
+
+.navigation a:hover {
+    color: #ff8000;
+}
+
+.navigation ul li a {
+    position: relative;
+}
+
+.navigation ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '';
+  color: transparent;
+  background: #ff9d00;
+  height: 1px;
+}
+
+.navigation ul li a:hover:after {
+  width: 100%;
+}
+
+.active {
+    background: rgba(255, 167, 79, 0.2);
+    border-radius: 15%;
+}
+
+#logo {
+    color: #ff8000;
+    font-family: "Brush Script MT", Arial, sans-serif;
+    font-size: 50px;
+    text-transform: lowercase;
+    margin:0px;
+    padding: 0px 10px
+}
+
+#upper{
+    text-transform: uppercase;
+}
+
+.cover-content { 
+    box-sizing:border-box;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 300px;
+    width: 70%;
+}
+
+.cover-content h1 {
+    color: rgba(255, 140, 25, 0.99);
+    font-family: 'Amatic SC', Arial, sans-serif;
+    font-size: 100px;
+    line-height: 90px;
+    margin: 0;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.cover-content h2 {
+    color: rgba(0, 0, 0, 0.6);
+    font-family: Cambria, Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h3 {
+    color: #14213D;
+    font-family: Gabriola, Arial, sans-serif;
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p { 
+    color: #333;
+    font-family: Gabriola, sans-serif;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.about, products {
+    width: 60%;
+    margin: auto;
+}
+
+.about p{
+    width: 80%;
+    min-height: 50%;
+    font-family: Arial, sans-serif;
+    display: inline-block;
+    margin: auto;
+    text-align: center;
+}
+
+.products {
+    background: #ebebeb;
+    border: 1px solid #8b8b8b;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.product {
+  display: inline-block;
+  margin: 10px 2% 80px 2%;
+  text-align: center;
+  width: 30%;
+}
+
+
+.product img {
+   width: 90%;
+    opacity: 0.7;
+    overflow: hidden;
+   -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    
+}
+
+.product img:hover {
+   -webkit-transform: scale(1.1);
+	transform: scale(1.05);
+    opacity: 1;
+}
+
+.blue {
+    color: #14213D !important;
+    font-family: Candara, Arial, sans-serif;
+    background-color: rgba(202, 217, 230, 0.33);
+    margin: 20px 0 40px 0;
+    padding: 0;
+}
+
+
+/* Produktai pardavimui */
+.produktai {
+  display: inline-block;
+  margin: 10px 1% 20px 1%;
+  text-align: center;
+  width: 30%;
+}
+
+.produktai img {
+   width: 50%;
+    border: 1px solid #656565;
+}
+
+.produktai h3 {
+    text-align: center;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.produktai h4 {
+    margin: 0 0 10px 0;
+}
+
+.produktai p {
+    margin: 0 100px;
+}
+
+/* Pabaiga */
+
+
+.footer {
+  height: 20px;    
+  position: relative;
+  border-top: 1px solid #6a3900;
+  right: 0;
+  bottom: 100;
+  left: 0;
+  margin-top: 50px;
+  padding: 1rem;
+  text-align: center;
+  background: rgba(255, 201, 100, 0.63);
+  
+    
+}
+
+.text1 {
+    margin: 0 1%;
+    padding: ;
+    text-align: center;
+    font-size: 13px;
+}
+
+.addressinfo {
+    font-weight: 600;
+    font-size: 20px;
+    margin: auto;
+    padding: 1em ;
+    background: rgba(152, 211, 255, 0.19);
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    display: inline-block;  
+}
+
+.time{
+    position:relative;
+    margin: 1% auto;  
+
+}
+
+.maps {
+    display: inline-block;
+    margin: auto;
+    padding: 10px 0 20px 0;    
+}
+
+/* Kontaktai css */
+.contacts {
+    margin: 0 30%;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;;
+    border-radius: 0%;
+}
+
+.contacts p {
+    padding: 0 20px;
+}
